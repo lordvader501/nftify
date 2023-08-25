@@ -1,0 +1,8 @@
+.token-container {
+  color: var(--cultured-grey, #f7f9f9);
+  font-family: Work Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}

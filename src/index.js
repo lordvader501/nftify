@@ -1,17 +1,56 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import routes from "./routes/router";
+import { RouterProvider } from "react-router-dom";
+import "@rainbow-me/rainbowkit/styles.css";
+import {
+  getDefaultWallets,
+  RainbowKitProvider,
+  midnightTheme,
+} from "@rainbow-me/rainbowkit";
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import {
+  mainnet,
+  polygon,
+  optimism,
+  arbitrum,
+  base,
+  zora,
+  goerli,
+} from "wagmi/chains";
+import { publicProvider } from "wagmi/providers/public";
+const { chains, publicClient, webSocketPublicClient } = configureChains(
+  [
+    mainnet,
+    polygon,
+    optimism,
+    arbitrum,
+    base,
+    zora,
+    ...(process.env.REACT_APP_ENABLE_TESTNETS === "true" ? [goerli] : []),
+  ],
+  [publicProvider()]
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const { connectors } = getDefaultWallets({
+  appName: "RainbowKit demo",
+  projectId: "YOUR_PROJECT_ID",
+  chains,
+});
+
+const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors,
+  publicClient,
+  webSocketPublicClient,
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <WagmiConfig config={wagmiConfig}>
+    <RainbowKitProvider chains={chains} theme={midnightTheme()}>
+      <RouterProvider router={routes} />
+    </RainbowKitProvider>
+  </WagmiConfig>
+);

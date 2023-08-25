@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0;
+}
+.left-0 {
+  left: 0;
+}
+.right-0 {
+  right: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
+}
+.row {
+  flex-direction: row;
+}
+.col {
   flex-direction: column;
-  align-items: center;
+}
+.j-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.j-start {
+  justify-content: start;
+}
+.j-between {
+  justify-content: space-between;
+}
+.a-center {
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.felx-start {
+  align-items: start;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pr-40 {
+  padding-right: 40px;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.w-fit {
+  width: -webkit-fill-available;
+}
+
+@media screen and (max-width: 710px) {
+  .body {
+    /* background: #55344177 !important; */
+    background: rgba(0, 0, 0, 0.57) !important;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar-container {
+    display: none !important;
   }
+  .token-container > h1 {
+    padding-left: 10px;
+  }
+  .res-search {
+    flex-direction: column-reverse;
+  }
+  .btn-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search-container {
+    left: 15%;
+    margin-top: 13px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .heading {
+    color: #fff;
+    font-family: Pacifico;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex !important;
+  }
+  .heading > h1 {
+    margin-block: 0;
+    margin-left: 15px;
+  }
+}
+
+.heading {
+  display: none;
 }
