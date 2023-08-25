@@ -10,15 +10,7 @@ import {
   midnightTheme,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import {
-  mainnet,
-  polygon,
-  optimism,
-  arbitrum,
-  base,
-  zora,
-  goerli,
-} from "wagmi/chains";
+import { mainnet, polygon, optimism, arbitrum, base, zora } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum, base, zora],

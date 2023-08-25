@@ -36,7 +36,7 @@ a {
   justify-content: center;
 }
 .j-start {
-  justify-content: start;
+  justify-content: flex-start;
 }
 .j-between {
   justify-content: space-between;
@@ -46,7 +46,7 @@ a {
 }
 
 .felx-start {
-  align-items: start;
+  align-items: flex-start;
 }
 .pt-40 {
   padding-top: 40px;
