@@ -67,6 +67,13 @@ a {
 .header {
   margin-inline: 15px;
 }
+.btn-right {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
 
 @media screen and (max-width: 710px) {
   .body {
@@ -82,13 +89,7 @@ a {
   .res-search {
     flex-direction: column-reverse;
   }
-  .btn-right {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-  }
+
   .search-container {
     left: 0;
     margin-left: 30px;
