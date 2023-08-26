@@ -40,8 +40,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 # Screenshots
 
-![image](https://github.com/lordvader501/nftify/assets/60027612/b6ed72a8-e7d1-48ac-88b2-36fcf85d8566)
-![image](https://github.com/lordvader501/nftify/assets/60027612/b2cee44d-bb68-453d-9255-4dd23176ff1c)
-![image](https://github.com/lordvader501/nftify/assets/60027612/3de5f86b-9349-40a3-82f9-f0960f2d23cc)
+![image](https://github.com/lordvader501/nftify/assets/60027612/9e022921-7f45-4db2-87b5-e93b76a1c61c)
+![image](https://github.com/lordvader501/nftify/assets/60027612/8af5a5e7-089c-4d94-a61a-59529119cd8e)
+![image](https://github.com/lordvader501/nftify/assets/60027612/b2cf45ce-6a18-40af-92a1-22c705bd3204)
+
+
+
 
 
