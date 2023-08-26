@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import routes from "./routes/router";
+import { RouterProvider } from "react-router-dom";
 import "@rainbow-me/rainbowkit/styles.css";
 import {
   getDefaultWallets,
@@ -33,7 +34,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <WagmiConfig config={wagmiConfig}>
     <RainbowKitProvider chains={chains} theme={midnightTheme()}>
-      <App />
+      <RouterProvider router={routes} />
     </RainbowKitProvider>
   </WagmiConfig>
 );
