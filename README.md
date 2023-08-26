@@ -1,9 +1,29 @@
-# Getting Started with Create React App
+# NFTIFY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Functionalities
+
+- All the data required in the website will come from the dex screener api. You just need to
+fetch it according to the user input and show it to the user.
+- In the search bar, take input as a pair/token address and show results according to it.
+- Fetch the results from the above-mentioned endpoints. Show the required data by
+making asynchronous calls.
+- When searching for a token address, show data for at most 10 pairs by repeating the
+pattern in Figma. Print in descending order of price in USD
+- Allow users to connect their wallet to the website. Use the rainbow kit tool (LINK)
+for it.
+
+# Tech stack used
+The tech stack for this task is reactjs and vanilla CSS and Rainbow kit 
+
+## API endpoints used
+
+- https://api.dexscreener.com/latest/dex/tokens/:tokenAddreses
+- https://api.dexscreener.com/latest/dex/search/?q=:q
 
 ## Available Scripts
 
+- clone the repository `git clone https://github.com/lordvader501/nftify`
+- install the dependencies `yarn install`
 In the project directory, you can run:
 
 ### `yarn start`
@@ -11,60 +31,17 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ning-tests) for more information.
 
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/lordvader501/nftify/assets/60027612/b6ed72a8-e7d1-48ac-88b2-36fcf85d8566)
+![image](https://github.com/lordvader501/nftify/assets/60027612/b2cee44d-bb68-453d-9255-4dd23176ff1c)
+![image](https://github.com/lordvader501/nftify/assets/60027612/3de5f86b-9349-40a3-82f9-f0960f2d23cc)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
