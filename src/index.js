@@ -18,7 +18,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "RainbowKit demo",
+  appName: "NFTify",
   projectId: "YOUR_PROJECT_ID",
   chains,
 });

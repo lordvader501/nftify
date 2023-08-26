@@ -29,7 +29,7 @@ const PairLayout = ({ searchData }) => {
   }, []);
   return (
     <div className="token-container">
-      <h1>Pair Search Results</h1>
+      <h1 tyle={{ marginLeft: "20px" }}>Pair Search Results</h1>
       {tokens.map((token) => {
         const timestamp = token.pairCreatedAt;
         const date = new Date(timestamp);

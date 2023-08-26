@@ -1,0 +1,23 @@
+.ham-list {
+  display: none;
+}
+
+@media screen and (max-width: 710px) {
+  .ham-list {
+    display: flex;
+    border: 5px solid purple;
+    border-radius: 10px;
+    padding: 0px 20px;
+    padding-bottom: 15px;
+    width: -webkit-fill-available;
+    margin: 15px 5px;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+    background: linear-gradient(
+      131deg,
+      rgb(124, 15, 53) 0%,
+      rgb(88, 18, 102) 100%
+    );
+  }
+}

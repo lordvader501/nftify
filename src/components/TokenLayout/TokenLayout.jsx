@@ -19,8 +19,8 @@ const TokenLayout = () => {
   }, []);
   return (
     <div className="token-container">
-      <h1>Token Search Results</h1>
-      {tokens.map((token) => {
+      <h1 style={{ marginLeft: "20px" }}>Token Search Results</h1>
+      {tokens.map((token, index) => {
         const timestamp = token.pairCreatedAt;
         const date = new Date(timestamp);
 
@@ -30,7 +30,7 @@ const TokenLayout = () => {
 
         const formattedDate = `${day}/${month}/${year}`;
         return (
-          <div className="flex row j-center flex-wrap">
+          <div className="flex row j-center flex-wrap" key={index}>
             <BasicInfo
               createdAt={formattedDate}
               symbol={token.baseToken.symbol}
